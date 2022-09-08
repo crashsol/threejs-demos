@@ -6,7 +6,7 @@ const scene = new THREE.Scene();
 
 //创建一个相机
 const camera = new THREE.PerspectiveCamera(
-  50,
+  75,
   window.innerWidth / window.innerHeight,
   0.1,
   1000
@@ -30,10 +30,6 @@ const cube = new THREE.Mesh(geometry, material);
 
 //在场景中加入 正方体
 scene.add(cube);
-
-//添加标线
-const axesHelper = new THREE.AxesHelper(5);
-scene.add(axesHelper);
 
 //设置相机位置
 camera.position.z = 5;
